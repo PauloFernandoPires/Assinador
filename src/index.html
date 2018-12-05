@@ -1,0 +1,46 @@
+
+<!DOCTYPE>
+
+<html>
+
+   <head>
+
+          <title>DemoCSharpActiveX webpage</title>
+
+   </head>
+
+   <body>
+
+       <OBJECT id="Assinador" classid="clsid:14BF9A73-81FB-479B-89BD-E83337ED5B22" codebase="DemoCSharpActiveX.cab"></OBJECT>  
+
+ 
+
+        <script type="text/javascript">
+
+            try {
+
+                var obj = document.Assinador;
+
+                if (obj) {
+
+                    alert(obj.SayHello());
+
+                } else {
+
+                    alert("Object is not created!");
+
+                }
+
+            } catch (ex) {
+
+                alert("Some error happens, error message is: " + ex.Description);
+
+            }
+
+       
+
+        </script>
+
+   </body>
+
+</html>
